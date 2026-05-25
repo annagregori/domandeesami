@@ -1,108 +1,92 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="it">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il mio Notion Database su GitHub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    </style>
 </head>
-<body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="it"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Il mio Notion Database su GitHub&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body class="bg-white text-[#37352f] p-6 md:p-12"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="max-w-6xl mx-auto"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="mb-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="text-5xl mb-2"&gt;🚀&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h1 class="text-4xl font-bold tracking-tight mb-2"&gt;Il Mio Database&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-gray-500 text-sm"&gt;Una replica minimale del mio database Notion ospitata su GitHub Pages.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="overflow-x-auto border border-gray-200 rounded-lg"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;table class="min-w-full divide-y divide-gray-200 text-sm text-left"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;thead class="bg-[#f7f7f5] text-gray-500 font-normal"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;th scope="col" class="px-4 py-2 border-r border-gray-200 font-medium"&gt;Nome (Testo)&lt;/th&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;th scope="col" class="px-4 py-2 border-r border-gray-200 font-medium"&gt;Tag Progetto (Select)&lt;/th&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;th scope="col" class="px-4 py-2 border-r border-gray-200 font-medium"&gt;Stato (Select)&lt;/th&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;th scope="col" class="px-4 py-2 font-medium"&gt;Data&lt;/th&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/thead&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;tbody id="database-body" class="divide-y divide-gray-200"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/tbody&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/table&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>// --- CONFIGURA I TUOI DATI QUI ---</p>
-<p class="p1"><span class="Apple-converted-space">        </span>// Puoi aggiungere, modificare o rimuovere queste righe.</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const databaseData = [</p>
-<p class="p1"><span class="Apple-converted-space">            </span>{</p>
-<p class="p1"><span class="Apple-converted-space">                </span>testo: "Comprare il pane e latte",</p>
-<p class="p1"><span class="Apple-converted-space">                </span>tag1: { testo: "Personale", colore: "bg-blue-100 text-blue-800" },</p>
-<p class="p1"><span class="Apple-converted-space">                </span>tag2: { testo: "Da fare", colore: "bg-gray-100 text-gray-800" },</p>
-<p class="p1"><span class="Apple-converted-space">                </span>data: "2026-05-25"</p>
-<p class="p1"><span class="Apple-converted-space">            </span>},</p>
-<p class="p1"><span class="Apple-converted-space">            </span>{</p>
-<p class="p1"><span class="Apple-converted-space">                </span>testo: "Finire il progetto GitHub Pages",</p>
-<p class="p1"><span class="Apple-converted-space">                </span>tag1: { testo: "Lavoro", colore: "bg-purple-100 text-purple-800" },</p>
-<p class="p1"><span class="Apple-converted-space">                </span>tag2: { testo: "In Corso", colore: "bg-yellow-100 text-yellow-800" },</p>
-<p class="p1"><span class="Apple-converted-space">                </span>data: "2026-06-01"</p>
-<p class="p1"><span class="Apple-converted-space">            </span>},</p>
-<p class="p1"><span class="Apple-converted-space">            </span>{</p>
-<p class="p1"><span class="Apple-converted-space">                </span>testo: "Prenotare le vacanze estive",</p>
-<p class="p1"><span class="Apple-converted-space">                </span>tag1: { testo: "Viaggi", colore: "bg-green-100 text-green-800" },</p>
-<p class="p1"><span class="Apple-converted-space">                </span>tag2: { testo: "Pronto", colore: "bg-green-100 text-green-800" },</p>
-<p class="p1"><span class="Apple-converted-space">                </span>data: "2026-07-15"</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>];</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>// --- FUNZIONE PER COSTRUIRE LA TABELLA ---</p>
-<p class="p1"><span class="Apple-converted-space">        </span>function renderDatabase() {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const tbody = document.getElementById('database-body');</p>
-<p class="p1"><span class="Apple-converted-space">            </span>tbody.innerHTML = ''; // Svuota la tabella</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>databaseData.forEach(row =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>// Formattiamo la data in modo più leggibile (es. 25 mag 2026)</p>
-<p class="p1"><span class="Apple-converted-space">                </span>const opzioniData = { year: 'numeric', month: 'short', day: 'numeric' };</p>
-<p class="p1"><span class="Apple-converted-space">                </span>const dataFormattata = new Date(row.data).toLocaleDateString('it-IT', opzioniData);</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>const tr = document.createElement('tr');</p>
-<p class="p1"><span class="Apple-converted-space">                </span>tr.className = "hover:bg-[#f7f7f5] transition-colors duration-150";</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>tr.innerHTML = `</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;td class="px-4 py-3 border-r border-gray-200 font-medium text-gray-900"&gt;${row.testo}&lt;/td&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;td class="px-4 py-3 border-r border-gray-200"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="px-2 py-1 rounded text-xs font-medium ${row.tag1.colore}"&gt;${row.tag1.testo}&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/td&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;td class="px-4 py-3 border-r border-gray-200"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="px-2 py-1 rounded text-xs font-medium ${row.tag2.colore}"&gt;${row.tag2.testo}&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/td&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;td class="px-4 py-3 text-gray-500"&gt;${dataFormattata}&lt;/td&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>`;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>tbody.appendChild(tr);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>});</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>// Avvia il rendering quando la pagina si carica</p>
-<p class="p1"><span class="Apple-converted-space">        </span>document.addEventListener('DOMContentLoaded', renderDatabase);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+<body class="bg-white text-[#37352f] p-6 md:p-12">
+
+    <div class="max-w-6xl mx-auto">
+        <div class="mb-8">
+            <div class="text-5xl mb-2">🚀</div>
+            <h1 class="text-4xl font-bold tracking-tight mb-2">Il Mio Database</h1>
+            <p class="text-gray-500 text-sm">Una replica minimale del mio database Notion ospitata su GitHub Pages.</p>
+        </div>
+
+        <div class="overflow-x-auto border border-gray-200 rounded-lg">
+            <table class="min-w-full divide-y divide-gray-200 text-sm text-left">
+                <thead class="bg-[#f7f7f5] text-gray-500 font-normal">
+                    <tr>
+                        <th scope="col" class="px-4 py-2 border-r border-gray-200 font-medium">Nome (Testo)</th>
+                        <th scope="col" class="px-4 py-2 border-r border-gray-200 font-medium">Tag Progetto (Select)</th>
+                        <th scope="col" class="px-4 py-2 border-r border-gray-200 font-medium">Stato (Select)</th>
+                        <th scope="col" class="px-4 py-2 font-medium">Data</th>
+                    </tr>
+                </thead>
+                <tbody id="database-body" class="divide-y divide-gray-200">
+                    </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        // --- CONFIGURA I TUOI DATI QUI ---
+        // Puoi aggiungere, modificare o rimuovere queste righe.
+        const databaseData = [
+            {
+                testo: "Comprare il pane e latte",
+                tag1: { testo: "Personale", colore: "bg-blue-100 text-blue-800" },
+                tag2: { testo: "Da fare", colore: "bg-gray-100 text-gray-800" },
+                data: "2026-05-25"
+            },
+            {
+                testo: "Finire il progetto GitHub Pages",
+                tag1: { testo: "Lavoro", colore: "bg-purple-100 text-purple-800" },
+                tag2: { testo: "In Corso", colore: "bg-yellow-100 text-yellow-800" },
+                data: "2026-06-01"
+            },
+            {
+                testo: "Prenotare le vacanze estive",
+                tag1: { testo: "Viaggi", colore: "bg-green-100 text-green-800" },
+                tag2: { testo: "Pronto", colore: "bg-green-100 text-green-800" },
+                data: "2026-07-15"
+            }
+        ];
+
+        // --- FUNZIONE PER COSTRUIRE LA TABELLA ---
+        function renderDatabase() {
+            const tbody = document.getElementById('database-body');
+            tbody.innerHTML = ''; // Svuota la tabella
+
+            databaseData.forEach(row => {
+                // Formattiamo la data in modo più leggibile (es. 25 mag 2026)
+                const opzioniData = { year: 'numeric', month: 'short', day: 'numeric' };
+                const dataFormattata = new Date(row.data).toLocaleDateString('it-IT', opzioniData);
+
+                const tr = document.createElement('tr');
+                tr.className = "hover:bg-[#f7f7f5] transition-colors duration-150";
+
+                tr.innerHTML = `
+                    <td class="px-4 py-3 border-r border-gray-200 font-medium text-gray-900">${row.testo}</td>
+                    <td class="px-4 py-3 border-r border-gray-200">
+                        <span class="px-2 py-1 rounded text-xs font-medium ${row.tag1.colore}">${row.tag1.testo}</span>
+                    </td>
+                    <td class="px-4 py-3 border-r border-gray-200">
+                        <span class="px-2 py-1 rounded text-xs font-medium ${row.tag2.colore}">${row.tag2.testo}</span>
+                    </td>
+                    <td class="px-4 py-3 text-gray-500">${dataFormattata}</td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        // Avvia il rendering quando la pagina si carica
+        document.addEventListener('DOMContentLoaded', renderDatabase);
+    </script>
 </body>
 </html>
